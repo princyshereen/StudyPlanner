@@ -28,6 +28,7 @@ export const AuthProvider = ({ children }) => {
       }
     } catch (err) {
       console.error('Fetch me error:', err);
+      logout();
     } finally {
       setLoading(false);
     }
